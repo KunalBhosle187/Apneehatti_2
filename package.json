@@ -1,54 +1,83 @@
 {
-  "name": "apnnehattiproject",
-  "version": "1.0.0",
-  "engines": {
-    "node": "14.15.4"
-  },
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "server": "nodemon server.js",
-    "client": "cd client/ && npm start --perfix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "install": "",
-    "data:import": "node backend/seeder.js",
-    "data:destroy": "node backend/seeder.js -d",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
-  },
-  "author": "kunal bhosle",
-  "license": "ISC",
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:5000",
   "dependencies": {
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
+    "@headlessui/react": "^1.6.6",
+    "@heroicons/react": "^1.0.6",
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.60",
+    "@mui/icons-material": "^5.0.0",
     "@mui/material": "^5.0.0",
-    "aws-sdk": "^2.1048.0",
-    "bcryptjs": "^2.4.3",
-    "compression": "^1.7.4",
-    "concurrently": "^6.3.0",
-    "cors": "^2.8.5",
-    "crypto": "^1.0.1",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "aos": "^2.3.4",
+    "axios": "^0.21.1",
+    "chart.js": "^3.7.0",
     "dateformat": "^4.5.1",
-    "dotenv": "^10.0.0",
-    "ejs": "^3.1.8",
-    "express": "^4.17.1",
-    "express-async-handler": "^1.1.4",
-    "formidable": "^1.2.2",
-    "handlebars": "^4.7.7",
-    "jsonwebtoken": "^8.5.1",
-    "material-table": "^1.69.3",
-    "mongoose": "^5.13.8",
-    "multer": "^1.4.4",
-    "nodemailer": "^6.6.3",
-    "nodemon": "^2.0.19",
-    "razorpay": "^2.0.6",
+    "draft-js": "^0.11.7",
+    "draftjs-to-html": "^0.9.1",
+    "flowbite": "^1.5.1",
+    "flowbite-react": "^0.1.3",
+    "immutable": "^4.1.0",
+    "jquery": "^3.6.0",
+    "moment": "^2.29.4",
+    "mongoose": "^6.0.13",
+    "postcss-cli": "^10.0.0",
+    "query-string": "^4.3.4",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^4.0.0",
+    "react-dom": "^18.2.0",
+    "react-draft-wysiwyg": "^1.14.7",
+    "react-paginate": "^8.1.0",
+    "react-paypal-button-v2": "^2.6.3",
+    "react-redux": "^7.2.4",
+    "react-responsive-carousel": "^3.2.21",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "5.0.1",
+    "react-toastify": "^8.0.2",
+    "recharts": "^2.1.2",
+    "redux": "^4.1.1",
     "redux-devtools-extension": "^2.13.9",
-    "sharp": "^0.30.7",
-    "socket.io": "^4.2.0",
-    "twilio": "^3.71.2",
-    "utils": "^0.3.1",
-    "uuid": "^8.3.2"
+    "redux-thunk": "^2.3.0",
+    "socket.io-client": "^4.2.0",
+    "uuid": "^3.4.0",
+    "validator": "^13.7.0",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.6"
   }
 }

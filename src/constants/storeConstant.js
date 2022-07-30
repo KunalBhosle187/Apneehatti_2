@@ -1,0 +1,3 @@
+export const STORES_REQUEST = "STORES_REQUEST";
+export const STORES_SUCCESS = "STORES_SUCCESS";
+export const STORES_FAIL = "STORES_FAIL";

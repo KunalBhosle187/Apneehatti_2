@@ -1,0 +1,11 @@
+
+
+export const ADMIN_LOG_REQUEST = "ADMIN_LOG_REQUEST";
+export const ADMIN_LOG_SUCCESS = "ADMIN_LOG_SUCCESS";
+export const ADMIN_LOG_FAIL = "ADMIN_LOG_FAIL";
+export const ADMIN_LOG_RESET = "ADMIN_LOG_RESET";
+
+export const ADMIN_LOGOUT = "ADMIN_LOGOUT";
+
+
+
